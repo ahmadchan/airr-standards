@@ -14,18 +14,18 @@ AIRR data.
 MiAIRR data submission to BioProject, BioSample and SRA
 =======================================================
 
-Since we propose to include a combination of raw and processed sequence data, the AIRR standard will sometimes need to be distributed and linked across multiple repositories (e.g., data in SRA linked to related data in GenBank). In addition, the data elements that comprise the standard will be mapped to ontologies in BioPortal through NIH CDE (Common Data Element) terms. These linkages will support more sophisticated validation and logical inference.
+Since we propose to include a combination of raw and processed sequence data, the AIRR standard will sometimes need to be distributed and linked across multiple repositories (e.g., data in SRA linked to related data in GenBank). Besides, the data elements that comprise the standard will be mapped to ontologies in BioPortal through NIH CDE (Common Data Element) terms. These linkages will support more sophisticated validation and logical inference.
 
 There are three main alternatives to submit AIRR data/metadata to NCBI repositories: (1) CEDAR's CAIRR pipeline; (2) NCBI's Web interface; and (3) NCBI's FTP server. These alternatives are described below:
 
 Option 1. Submission via the CEDAR system (CAIRR submission pipeline)
 ---------------------------------------------------------------------
 
-CEDAR's CAIRR submission pipeline helps investigators and curators to edit and validate ontology-controlled metadata. This pipeline provides a seamless interface to transmit SRA datasets to the NCBI SRA and BioSample repositories from `the CEDAR Workbench <https://cedar.metadatacenter.org>`_. Note that the CEDAR template and template elements used by this pipeline are publicly available in the following CEDAR folder: `All/Shared/Shared by CEDAR/MiAIRR <https://cedar.metadatacenter.org/dashboard?folderId=https:%2F%2Frepo.metadatacenter.org%2Ffolders%2F4e5ce935-03ea-401a-804c-c38160c560f2>`_.
+CEDAR's CAIRR submission pipeline helps investigators and curators to edit and validate ontology-controlled metadata. This pipeline provides a seamless interface to transmit SRA datasets to the NCBI SRA and BioSample repositories from `the CEDAR Workbench <https://cedar.metadatacenter.org>`_. Note that the CEDAR template and template elements used by this pipeline are publicly available in the following CEDAR folder: `All/Shared/Shared by CEDAR/MiAIRR <https://cedar.metadatacenter.org/dashboard?folderId=https:%2F%2Frepo.metadatacenter.org%2Ffolders%2F4e5ce935-03ea-401a-804c-c38160c560f2>`_ or the pipeline can be directly be accessed at http://cairr.miairr.org
 
 Submission steps:
 
-#. Open CEDAR's MiAIRR template by clicking on `this link <https://cedar.metadatacenter.org/instances/create/https://repo.metadatacenter.org/templates/ea716306-5263-4f7a-9155-b7958f566933?folderId=https:%2F%2Frepo.metadatacenter.org%2Ffolders%2F4e5ce935-03ea-401a-804c-c38160c560f2>`_. If you aren't already logged in, this will take you to the CEDAR login panel. If you are a new user, you will have to create an account on the CEDAR Workbench by `clicking here <https://auth.metadatacenter.org/auth/realms/CEDAR/login-actions/registration?client_id=cedar-angular-app>`_.
+#. Open CEDAR's MiAIRR template by clicking on `this link <https://cedar.metadatacenter.org/instances/create/https://repo.metadatacenter.org/templates/ea716306-5263-4f7a-9155-b7958f566933?folderId=https:%2F%2Frepo.metadatacenter.org%2Ffolders%2F4e5ce935-03ea-401a-804c-c38160c560f2>`_. or click at http://cairr.miairr.org. If you aren't already logged in, this will take you to the CEDAR login panel. If you are a new user, you will have to create an account on the CEDAR Workbench by `clicking here <https://auth.metadatacenter.org/auth/realms/CEDAR/login-actions/registration?client_id=cedar-angular-app>`_.
 
    .. image:: ../cairr/images/CAIRR_login.png
 
@@ -164,6 +164,8 @@ keywords marking it as TLS submission.
 Non-productive records should be removed before the data submission or
 use an alternative annotation as described in the specification
 document.
+
+- Generating MiAIRR compliant GenBank/TLS submissions https://changeo.readthedocs.io/en/stable/examples/genbank.html
 
 GenBank provides multiple tools (GUI and command-line) to submit data:
 
